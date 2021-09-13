@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { createPost } from '../actions/postsActions';
 import { useDispatch, useSelector } from 'react-redux';
 import { showAlertAction, hideAlertAction } from '../actions/alertActions';
+import { useHistory } from 'react-router';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -71,7 +72,7 @@ const Post = ({history}) => {
             body
         });
 
-        history.push('/posts');
+        history.push('/');
     }
 
     return ( 
