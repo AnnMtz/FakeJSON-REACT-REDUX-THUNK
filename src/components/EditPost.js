@@ -68,7 +68,7 @@ const EditPost = () => {
 
         dispatch(edditPostAction(post))
 
-        history.push('/posts');
+        history.push('/');
     }
 
     return (
